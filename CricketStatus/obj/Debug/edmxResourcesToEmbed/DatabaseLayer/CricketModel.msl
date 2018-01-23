@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MydatabaseModelStoreContainer" CdmEntityContainer="MydatabaseEntities">
+    <EntitySetMapping Name="Cricketer_Details">
+      <EntityTypeMapping TypeName="MydatabaseModel.Cricketer_Details">
+        <MappingFragment StoreEntitySet="Cricketer_Details">
+          <ScalarProperty Name="Details_ID" ColumnName="Details_ID" />
+          <ScalarProperty Name="Cricketer_ID" ColumnName="Cricketer_ID" />
+          <ScalarProperty Name="Team" ColumnName="Team" />
+          <ScalarProperty Name="ODI_Runs" ColumnName="ODI_Runs" />
+          <ScalarProperty Name="Test_Runs" ColumnName="Test_Runs" />
+          <ScalarProperty Name="Wickets" ColumnName="Wickets" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cricketer_ODI_Statistics">
+      <EntityTypeMapping TypeName="MydatabaseModel.Cricketer_ODI_Statistics">
+        <MappingFragment StoreEntitySet="Cricketer_ODI_Statistics">
+          <ScalarProperty Name="ODI_ID" ColumnName="ODI_ID" />
+          <ScalarProperty Name="Cricketer_ID" ColumnName="Cricketer_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Half_Century" ColumnName="Half_Century" />
+          <ScalarProperty Name="Century" ColumnName="Century" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cricketer_Test_Statistics">
+      <EntityTypeMapping TypeName="MydatabaseModel.Cricketer_Test_Statistics">
+        <MappingFragment StoreEntitySet="Cricketer_Test_Statistics">
+          <ScalarProperty Name="Test_ID" ColumnName="Test_ID" />
+          <ScalarProperty Name="Cricketer_ID" ColumnName="Cricketer_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Half_Century" ColumnName="Half_Century" />
+          <ScalarProperty Name="Century" ColumnName="Century" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cricketers">
+      <EntityTypeMapping TypeName="MydatabaseModel.Cricketer">
+        <MappingFragment StoreEntitySet="Cricketers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ODI" ColumnName="ODI" />
+          <ScalarProperty Name="Test" ColumnName="Test" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="MydatabaseModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Mobileno" ColumnName="Mobileno" />
+          <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
